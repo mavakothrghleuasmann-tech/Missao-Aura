@@ -1,0 +1,60 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+  
+    background-image: url("imagens/Planeta.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+    color: #00f0ff;
+    font-family: 'Rajdhani', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+#canvas-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+    padding: 10px;
+}
+
+
+input, select, button {
+    font-family: 'Rajdhani', sans-serif !important;
+    background: rgba(10, 25, 47, 0.9) !important;
+    border: 1px solid #00f0ff !important;
+    color: #e2e8f0 !important;
+    border-radius: 6px !important;
+    padding: 8px 12px !important;
+    font-size: 15px !important;
+    outline: none !important;
+    transition: all 0.3s ease !important;
+}
+
+input:focus, select:focus {
+    box-shadow: 0 0 10px rgba(0, 240, 255, 0.5) !important;
+    border-color: #00ff88 !important;
+}
+
+@media (max-width: 500px) {
+    body {
+        align-items: flex-start;
+        padding: 5px;
+    }
+    
+    input, select, button {
+        font-size: 13px !important;
+        padding: 6px 8px !important;
+    }
+}
